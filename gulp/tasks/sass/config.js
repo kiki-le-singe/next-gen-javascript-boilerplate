@@ -6,7 +6,7 @@ var fontAwesomeIconFontsDir = '/fonts/';
 module.exports = {
   sass: {
     cssDir: 'app/styles/css',
-    mainSassFile: sassDir + '/main.scss',
+    indexSassFile: sassDir + '/index.scss',
     dist: {
       dest: 'dist/styles/'
     }
