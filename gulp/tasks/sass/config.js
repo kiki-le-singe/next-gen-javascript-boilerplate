@@ -1,7 +1,7 @@
 'use strict';
 
 var sassDir = 'app/styles/scss';
-var fontAwesomeIconFontsDir = '/fonts/';
+var fontAwesomeIconFontsDir = '/fonts';
 
 module.exports = {
   sass: {
