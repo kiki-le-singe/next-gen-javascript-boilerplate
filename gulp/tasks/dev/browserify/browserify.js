@@ -40,13 +40,13 @@ function bundle() {
   return b.bundle()
     // log errors if they happen
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))
-    .pipe(source(config.dev.source))
+    .pipe(source(config.source))
     // optional, remove if you don't need to buffer file contents
     .pipe(buffer())
     // optional, remove if you dont want sourcemaps
     .pipe(sourcemaps.init({loadMaps: true})) // loads map from browserify file
     .pipe(sourcemaps.write('./')) // writes .map file
-    .pipe(gulp.dest(config.dev.dest));
+    .pipe(gulp.dest(config.dest));
 }
 
 gulp.task('scripts:dev', bundle); // so you can run `gulp scripts:dev` to build the file

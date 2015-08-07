@@ -7,9 +7,7 @@ module.exports = {
   sass: {
     cssDir: 'app/styles/css',
     indexSassFile: sassDir + '/index.scss',
-    dist: {
-      dest: 'dist/styles/'
-    }
+    dest: 'dist/styles/'
   },
   fonts: {
     src: [
@@ -20,12 +18,7 @@ module.exports = {
       fontAwesomeIconFontsDir + '*.woff2',
       fontAwesomeIconFontsDir + '*.otf'
     ],
-    dev: {
-      path: fontAwesomeIconFontsDir // in node_modules/font-awesome/fonts/
-    },
-    dist: {
-      path: 'fonts',
-      dest: 'dist/styles/fonts/'
-    }
+    path: 'fonts',
+    dest: 'dist/styles/fonts/'
   }
 };
